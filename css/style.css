@@ -603,6 +603,15 @@ display: none;
     margin: 0 auto;
 
   }
+  .work_container2{
+    display: none;
+  }
+.additional-content {
+    display: none;
+  }
+   .toggle-content-btn{
+    display: none;
+   }
   
   .my-work .work-item {
     flex: 0 0 calc(33.33% - 30px);
@@ -613,7 +622,6 @@ display: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
     box-shadow: 0 0 15px rgba(6, 46, 247);
-
     background: linear-gradient(to bottom, rgba(43, 43, 110, 0.5), rgba(255, 173, 173, 0.7));
 
   }
@@ -642,6 +650,11 @@ display: none;
 
 
 /* Add your existing CSS styles and other sections' styles above */
+
+/* Hide the additional content by default */
+
+  
+
 
 /* Button Style */
 .work-item .btn {
@@ -674,11 +687,11 @@ display: none;
  
   .bot{
     display: block;
-    margin: 50px auto;
+    margin: 10px auto;
     width: fit-content;
     border: 1px solid;
     background-color: var(--main-color);
-    padding: 14px 50px;
+    padding: 5px 5px;
     border-radius: 5px;
     text-decoration: none;
     color: #faf6f6;
@@ -847,6 +860,159 @@ form input,form textarea{
 }
 /*
 media queries*/
+@media(max-width:600px)
+{
+    .home{
+        flex: 1 1 40rem;
+        padding-left: 5rem; 
+        padding-top: 10rem;
+      
+    }
+    
+    img#optionalstuff {
+        display: none;
+      }
+
+
+      
+.about .row-1 .image{
+    flex:1 1 15rem;
+    padding-top: 5rem;
+
+}
+
+.about .row-1 .image img{
+    height: 80%;
+    width: 100%;  
+}
+
+.about .row-1 .content .box-container .box{
+    display: none;
+}
+ 
+
+.my-work .work-container {
+    display: grid;
+    font-size: 5rem;
+    padding: 5rem;
+  }
+
+#w4{
+    display: none;
+}
+  
+.additional-content {
+    display: none;
+  }
+  
+  /* Style for the "See More" button */
+  .toggle-content-btn {
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    border: 1px solid;
+    background-color: var(--main-color);
+    padding: 14px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #faf6f6;
+    font-size: 3rem;
+  }
+.toggle-content-btn:hover{
+    background: #000000;
+}
+
+.certification
+{
+    padding: 0;
+    margin-bottom: 50px;
+}
+.achieve-container {
+    padding: 5rem 5rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#prevBtn
+{
+    
+    background-color: var(--main-color);
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+
+}
+#nextBtn
+{
+    
+    background-color: var(--main-color);
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+
+}
+
+
+.contact-right{
+    width: 90%;
+    margin-left: 5%;
+
+}
+.contact-left{
+    font-size: 10%;
+  }
+  
+
+
+.copyright{
+    font-size: 13px;
+}
+
+#sub{
+font-size: 3rem;
+}
+
+header{
+    width: 40rem;
+   
+}
+
+header .navbar a{
+  
+    font-size: 4rem;
+}
+
+header .logo{
+  
+    font-size: 4rem;
+    margin-top: 30%;
+}
+.education {
+    padding: 0;
+  }
+}
+
+
 @media(max-width:991px){
 
     html{
@@ -1012,10 +1178,10 @@ header.active{
 }
 
 
-@media(max-width:300px)
+@media(max-width:400px)
 {
     html{
-        font-size:35%;
+        font-size:30%;
     }
     body{
         padding: 6px;
@@ -1026,7 +1192,7 @@ header.active{
     }
     
     header{
-        left:-170%;
+        left:-190%;
     }
     header.active{
         left: 0%;

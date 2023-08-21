@@ -50,7 +50,7 @@
         </div>
         
         <div class="image">
-            <img src="images/g2.jpg" alt="">
+            <img id="optionalstuff" src="images/g2.jpg" alt="">
 
         </div>
 
@@ -61,7 +61,7 @@
 
     <div class="row-1">
         <div class="image">
-            <img src="images/about-img.png" alt="">
+            <img id="stuff" src="images/about-img.png" alt="">
         </div>
         <div class="content">
             <h3> gargi ghosh</h3>
@@ -203,7 +203,39 @@
           I have built a Full Stack Social Media Website using React JS, SCSS, JavaScript, MySQL, Node.js, and Express JS. This website features a fully functional front-end and back-end, as well as an API.</p>
         <a href="https://drive.google.com/file/d/1FuKPNIylGN9JJxm3Cqr4PStBbHZY1C44/view" class="btn view-project-btn">View Project</a>
       </div>
+    
+        <div class="work-item" id="w4">
+          <img src="images/google.jpeg" alt="Work 1">
+          <h3>Google Search Engine Clone </h3>
+          <p class="project-description">I have created a Google Search Engine Clone using React JS, CSS, and a REST API. The clone closely resembles the design and functionality of Google's search engine, and it incorporates the latest web development techniques and best practices.
+          </p>
+          <a href="https://github.com/gargi321960/googleclone" class="btn view-project-btn">View Project</a>
+        </div>
+  
+        <div class="work-item" id="w4">
+          <img src="images/tech.jpeg" alt="Work 1">
+          <h3>Techcoding Education website</h3>
+          <p class="project-description">TechSupport Hub is a sleek, animated React web app providing top-notch technical support. Enjoy interactive tutorials, vibrant visuals, and real-time chat for expert assistance. Your go-to destination for hassle-free tech solutions.
+          </p>
+          <a href="https://github.com/gargi321960/Techcoding.react.app" class="btn view-project-btn">View Project</a>
+        </div>
+  
+        <div class="work-item" id="w4">
+          <img src="images/movie.jpeg" alt="Work 1">
+          <h3>Movie Recomendation System</h3>
+          <p class="project-description">In Python, a movie recommendation system using a dataset typically involves
+            loading and exploring the movie dataset, performing data cleaning and
+            preprocessing,extracting relevant features, and calculating similarities between
+            movies based on those features.
+            </p>
+          <a href="https://github.com/gargi321960/movie-recomendation-system-python" class="btn view-project-btn">View Project</a>
+        </div>
+        
+        <!-- Add more project items as needed -->
+      </div>
 
+
+      <div class="additional-content" id="additional-content">
       <div class="work-item">
         <img src="images/google.jpeg" alt="Work 1">
         <h3>Google Search Engine Clone </h3>
@@ -233,7 +265,9 @@
       
       <!-- Add more project items as needed -->
     </div>
-    <a href="#"  class="bot ">See more</a>
+  
+  <button class="toggle-content-btn" id="toggle-content-btn">See More</button>
+
   </div>
 
 
@@ -284,7 +318,7 @@
   <input type="text" name="Name" placeholder="Your Name" required>
   <input type="email" name="Email" placeholder="Your Email" required>
   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-  <button type="submit"class="btn">Submit</button>
+  <button type="submit"class="btn"  id="sub">Submit</button>
 </form>
 <span id="msg">
 </span>
@@ -325,6 +359,27 @@
           })
           .catch(error => console.error('Error!', error.message))
       })
+
+
+
+
+      document.addEventListener('DOMContentLoaded', function () {
+  const toggleContentBtn = document.getElementById('toggle-content-btn');
+  const additionalContent = document.getElementById('additional-content');
+
+  toggleContentBtn.addEventListener('click', function () {
+    if (additionalContent.style.display === 'none') {
+      additionalContent.style.display = 'block';
+      toggleContentBtn.textContent = 'See Less';
+    } else {
+      additionalContent.style.display = 'none';
+      toggleContentBtn.textContent = 'See More';
+    }
+  });
+});
+
+
+
     </script>
 
 
