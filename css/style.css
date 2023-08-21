@@ -610,9 +610,10 @@ display: none;
     display: none;
   }
    .toggle-content-btn{
-    display: none;
+      display: none;
    }
-  
+
+   
   .my-work .work-item {
     flex: 0 0 calc(33.33% - 30px);
     margin: 15px;
@@ -889,12 +890,13 @@ media queries*/
 .about .row-1 .content .box-container .box{
     display: none;
 }
- 
+ .my-work{
+    font-size:10rem;
+    padding: 5rem;
+ }
 
 .my-work .work-container {
     display: grid;
-    font-size: 5rem;
-    padding: 5rem;
   }
 
 #w4{
